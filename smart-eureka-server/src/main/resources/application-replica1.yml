@@ -1,0 +1,13 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: eureka-server
+eureka:
+  instance:
+    hostname: replica1 #需配置本地的 C:\Windows\System32\drivers\etc\hosts
+  client:
+    serviceUrl:
+      defaultZone: http://replica2:8003/eureka/ #注册到另一个Eureka注册中心
+    fetch-registry: true
+    register-with-eureka: true
