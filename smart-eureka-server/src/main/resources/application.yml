@@ -3,6 +3,10 @@ server:
 spring:
   application:
     name: eureka-server #指定服务名称
+  security:           #设置一个简单的Security账户密码 (https://juejin.im/post/5d78cd53f265da03d55e8351)
+    user:
+      name: smart-eureka
+      password: smart-eureka-pwd
 eureka:
   instance:
     hostname: localhost #指定主机地址

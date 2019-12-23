@@ -2,7 +2,7 @@ server:
   port: 8003
 spring:
   application:
-    name: eureka-server
+    name: eureka-server-replica
 eureka:
   instance:
     hostname: replica2

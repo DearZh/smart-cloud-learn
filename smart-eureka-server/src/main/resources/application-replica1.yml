@@ -2,7 +2,7 @@ server:
   port: 8002
 spring:
   application:
-    name: eureka-server
+    name: eureka-server-replica
 eureka:
   instance:
     hostname: replica1 #需配置本地的 C:\Windows\System32\drivers\etc\hosts
