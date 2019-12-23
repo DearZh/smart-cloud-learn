@@ -1,7 +1,7 @@
 package com.smart.cloud.smartuserservice.domain;
 
 /**
- * @author Arnold.zhao <a href="mailto:13949123615@163.com"/>
+ * @author Arnold.zhao <a href="mailto:Arnold_zhao@126.com"/>
  * @create 2019-11-21
  */
 public class User {

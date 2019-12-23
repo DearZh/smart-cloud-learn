@@ -3,7 +3,7 @@ package com.smart.cloud.smartplatformcommon.properties;
 /**
  * Sftp上传时配置文件读取
  *
- * @author Arnold.zhao <a href="mailto:13949123615@163.com"/>
+ * @author Arnold.zhao <a href="mailto:Arnold_zhao@126.com"/>
  * @create 2019-04-04
  */
 public class SftpProperties {

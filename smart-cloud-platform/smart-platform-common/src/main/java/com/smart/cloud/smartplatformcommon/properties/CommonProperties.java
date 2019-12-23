@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 /**
  * 全局配置读取
  *
- * @author Arnold.zhao <a href="mailto:13949123615@163.com"/>
+ * @author Arnold.zhao <a href="mailto:Arnold_zhao@126.com"/>
  * @create 2019-04-04
  */
 @Component

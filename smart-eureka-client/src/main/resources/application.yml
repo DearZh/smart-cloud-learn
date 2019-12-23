@@ -1,11 +1,11 @@
 server:
-  port: 8101 #ÔËĞĞ¶Ë¿ÚºÅ
+  port: 8101 #è¿è¡Œç«¯å£å·
 spring:
   application:
-    name: eureka-client #·şÎñÃû³Æ
+    name: eureka-client #æœåŠ¡åç§°
 eureka:
   client:
-    register-with-eureka: true #×¢²áµ½EurekaµÄ×¢²áÖĞĞÄ
-    fetch-registry: true #»ñÈ¡×¢²áÊµÀıÁĞ±í
+    register-with-eureka: true #è¡¨ç¤ºæ˜¯å¦å°†è‡ªèº«æœåŠ¡æ³¨å†Œåˆ°Eureka Server
+    fetch-registry: true #è¡¨ç¤ºæ˜¯å¦ä»Eureka Serverè·å–æ³¨å†Œä¿¡æ¯
     service-url:
-      defaultZone: http://localhost:8001/eureka/ #ÅäÖÃ×¢²áÖĞĞÄµØÖ·
+      defaultZone: http://smart-eureka:smart-eureka-pwd@localhost:8001/eureka/ #é…ç½®æ³¨å†Œä¸­å¿ƒåœ°å€ï¼ˆhttp://${username}:${password}@${hostname}:${port}/eureka/ï¼‰
