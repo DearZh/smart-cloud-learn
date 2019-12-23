@@ -1,0 +1,15 @@
+server:
+  port: 8301
+spring:
+  application:
+    name: smart-ribbon
+eureka:
+  client:
+    service-url:
+      defaultZone: http://smart-eureka:smart-eureka-pwd@localhost:8001/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+#定义服务访问地址（以服务名作为URI），业务层使用
+service-url:
+  user-service: http://user-service
