@@ -1,0 +1,15 @@
+server:
+  port: 8102 #运行端口号
+spring:
+  application:
+    name: smart-hystrix-turbine #服务名称
+eureka:
+  client:
+    register-with-eureka: true #表示是否将自身服务注册到Eureka Server
+    fetch-registry: true #表示是否从Eureka Server获取注册信息
+    service-url:
+      defaultZone: http://smart-eureka:smart-eureka-pwd@localhost:8001/eureka/ #配置注册中心地址（http://${username}:${password}@${hostname}:${port}/eureka/）
+turbine:
+  app-config: smart-hystrix-user #指定需要收集信息的服务名称
+  cluster-name-expression: new String('default') #指定服务所属集群
+  combine-host-port: true #以主机名和端口号来区分服务
