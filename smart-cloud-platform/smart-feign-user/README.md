@@ -1,0 +1,2 @@
+#smart-feign-user
+实现了基于Feign的请求调用方式，Feign的jar依赖中已经依赖了hystrix熔断，所以此处无需再引入hystrix的包

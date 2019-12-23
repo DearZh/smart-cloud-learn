@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * 调用远程的 user-service 模块接口
  *
- * @author Arnold.zhao <a href="mailto:13949123615@163.com"/>
+ * @author Arnold.zhao <a href="mailto:Arnold_zhao@126.com"/>
  * @create 2019-11-21
  */
 @FeignClient(value = "user-service",fallback = UserFallbackService.class)

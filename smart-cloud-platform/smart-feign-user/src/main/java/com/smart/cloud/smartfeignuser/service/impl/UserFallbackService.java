@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 /**
  * 远程 Feign 接口调用的熔断后行为 hystrix
  *
- * @author Arnold.zhao <a href="mailto:13949123615@163.com"/>
+ * @author Arnold.zhao <a href="mailto:Arnold_zhao@126.com"/>
  * @create 2019-11-21
  */
 @Service
