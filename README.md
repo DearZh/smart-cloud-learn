@@ -19,19 +19,26 @@ Cloud的框架的确很简单，很舒服；如果你现有的SOA服务需要做
 
 ## 项目各层级说明：
 
-* smart-eureka-server (port：8001，replica1：8002，replica2：8003)实现了eureka注册中心的多节点互为主备验证,以及当前eurekaServer添加Security认证的方式
+* [smart-eureka-server](https://github.com/DearZh/smart-cloud-learn/tree/master/smart-eureka-server) 
+(port：8001，replica1：8002，replica2：8003)实现了eureka注册中心的多节点互为主备验证,以及当前eurekaServer添加Security认证的方式
 
-* smart-eureka-client (port：8101)用于验证eureka-client于server端的注册
+* [smart-eureka-client](https://github.com/DearZh/smart-cloud-learn/tree/master/smart-eureka-client) 
+(port：8101)用于验证eureka-client于server端的注册
 
-* smart-cloud-platform/smart-user-service (port：8201，replica1：8202) user manager service，多个user_service实例的目的是为了验证Ribbon，Feign负载均衡的调用能力
+* [smart-cloud-platform/smart-user-service](https://github.com/DearZh/smart-cloud-learn/tree/master/smart-cloud-platform/smart-user-service) 
+(port：8201，replica1：8202) user manager service，多个user_service实例的目的是为了验证Ribbon，Feign负载均衡的调用能力
 
-* smart-cloud-platform/smart-ribbon(port：8301) 采用ribbon的方式调用user-service服务接口，包含对负载均衡的服务端调用方式说明（随机，轮训，响应时间等）
+* [smart-cloud-platform/smart-ribbon](https://github.com/DearZh/smart-cloud-learn/tree/master/smart-cloud-platform/smart-ribbon)
+(port：8301) 采用ribbon的方式调用user-service服务接口，包含对负载均衡的服务端调用方式说明（随机，轮训，响应时间等）
 
-* smart-cloud-platform/smart-hystrix-user(port：8302，replica1:8303) ribbon的方式调用user-service服务接口，并包含了一系列的熔断操作（请求缓存，请求合并，服务熔断等）
+* [smart-cloud-platform/smart-hystrix-user](https://github.com/DearZh/smart-cloud-learn/tree/master/smart-cloud-platform/smart-hystrix-user)
+(port：8302，replica1:8303) ribbon的方式调用user-service服务接口，并包含了一系列的熔断操作（请求缓存，请求合并，服务熔断等）
 
-* smart-hystrix-turbine(port：8102) 用来聚合smart-hystrix-user的监控信息，多Hystrix集群监控时使用；
+* [smart-hystrix-turbine](https://github.com/DearZh/smart-cloud-learn/tree/master/smart-hystrix-turbine)
+(port：8102) 用来聚合smart-hystrix-user的监控信息，多Hystrix集群监控时使用；
 
-* smart-hystrix-dashboard(port：8103) 单Hystrix实例监控及多Hystrix集群状态监控(监控页各展示内容详情可看当前项目下的README说明)；
+* [smart-hystrix-dashboard](https://github.com/DearZh/smart-cloud-learn/tree/master/smart-hystrix-dashboard)
+(port：8103) 单Hystrix实例监控及多Hystrix集群状态监控(监控页各展示内容详情可看当前项目下的README说明)；
 
 * 
 
