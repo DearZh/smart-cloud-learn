@@ -1,0 +1,11 @@
+server:
+  port: 8103 #运行端口号
+spring:
+  application:
+    name: smart-hystrix-dashboard #服务名称
+eureka:
+  client:
+    register-with-eureka: true #表示是否将自身服务注册到Eureka Server
+    fetch-registry: true #表示是否从Eureka Server获取注册信息
+    service-url:
+      defaultZone: http://smart-eureka:smart-eureka-pwd@localhost:8001/eureka/ #配置注册中心地址（http://${username}:${password}@${hostname}:${port}/eureka/）
