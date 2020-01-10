@@ -38,13 +38,18 @@ Cloud的框架的确很简单，很舒服；如果你现有的SOA服务需要做
 (port：8102) 用来聚合smart-hystrix-user的监控信息，多Hystrix集群监控时使用；
 
 * [smart-hystrix-dashboard](https://github.com/DearZh/smart-cloud-learn/tree/master/smart-hystrix-dashboard)
-(port：8103) 单Hystrix实例监控及多Hystrix集群状态监控(监控页各展示内容详情可看当前项目下的README说明)；
+(port：8103) 单Hystrix实例监控及多Hystrix集群状态监控 [(监控页各展示内容详情可看当前项目下的README说明)](https://github.com/DearZh/smart-cloud-learn/tree/master/smart-hystrix-dashboard)；
 
-* 
+* [smart-cloud-platform/smart-feign-user](https://github.com/DearZh/smart-cloud-learn/tree/master/smart-cloud-platform/smart-feign-user) （port：8303）
+基于Feign的方式调用user-service服务接口实现了负载均衡的服务调用方式及熔断说明（Feign是基于ribbon实现的客户端服务调用时的负载均衡组件）
 
+* [smart-zuul-proxy](https://github.com/DearZh/smart-cloud-learn/tree/master/smart-zuul-proxy)(port：8401)
+基于zuul的代理网关，实现了（反向代理，负载均衡及拦截器和熔断功能）
+
+*
 
 除了上述对各层级的简单说明外，各项目目录下也都有添加针对当前项目的详细说明，详情可查看各项目目录下的README.md文件；
 
-## 结语
+## 
 当前本人所负责的产品的确存在现有的SOA项目结构向SpringCloud分布式升级的需求，所以smart-cloud-learn也便是作为本人对SpringCloud的探索而存在；
 当前项目结构由于是学习使用，相对而言结构并不复杂，为了保持单一性，避免再添加更多的文件，导致项目结构越来越嘈杂，所以当前的cloud-learn后续将

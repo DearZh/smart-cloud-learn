@@ -1,0 +1,20 @@
+server:
+  port: 8401 #运行端口号
+spring:
+  application:
+    name: zuul-proxy #服务名称
+eureka:
+  client:
+    register-with-eureka: true #表示是否将自身服务注册到Eureka Server
+    fetch-registry: true #表示是否从Eureka Server获取注册信息
+    service-url:
+      defaultZone: http://smart-eureka:smart-eureka-pwd@localhost:8001/eureka/ #配置注册中心地址（http://${username}:${password}@${hostname}:${port}/eureka/）
+
+#默认情况下zuul会代理所有注册到eureka的微服务，所以如果不做下述的rotes配置的情况下，user-service的服务，默认访问方式则是： ip:8401/user-service/user/1 ，及服务的path默认是当前服务的名称
+zuul:
+  routes:
+    baidu-test:       #访问ip:8401/baidu 将会被直接映射到 http://baidu.com的页面
+      path: /baidu/**
+      url: http://baidu.com
+    user-service:   #访问 ip:8401/userService时则会自动跳转到user-service服务;  ip:8401/userService/user/1 将访问user-server的user接口
+      path: /userService/**
