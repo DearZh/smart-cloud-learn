@@ -1,5 +1,5 @@
 server:
-  port: 8701
+  port: 8303
 spring:
   application:
     name: feign-service
@@ -8,10 +8,10 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone: http://localhost:8001/eureka/
+      defaultZone: http://smart-eureka:smart-eureka-pwd@localhost:8001/eureka/
 feign:
   hystrix:
     enabled: true #在Feign中开启Hystrix
 logging:
-  level:
+  level: #（设置需要开启Feign日志打印的客户端，此处设置 UserService）
     com.smart.cloud.smartfeignuser.service.UserService: debug
