@@ -44,12 +44,16 @@ Cloud的框架的确很简单，很舒服；如果你现有的SOA服务需要做
 基于Feign的方式调用user-service服务接口实现了负载均衡的服务调用方式及熔断说明（Feign是基于ribbon实现的客户端服务调用时的负载均衡组件）
 
 * [smart-zuul-proxy](https://github.com/DearZh/smart-cloud-learn/tree/master/smart-zuul-proxy)(port：8401)
-基于zuul的代理网关，实现了（反向代理，负载均衡及拦截器和熔断功能）
+基于zuul的代理网关，实现了反向代理，负载均衡及拦截器和熔断功能；
 
-* [smart-nacos]()基于nacos实现配置中心和注册中心的功能
+* [smart-nacos](https://github.com/DearZh/smart-cloud-learn/tree/master/smart-nacos) 实现了基于Alibaba Nacos的配置中心和注册中心功能；
 
-除了上述对各层级的简单说明外，各项目目录下也都有添加针对当前项目的详细说明，详情可查看各项目目录下的README.md文件；
+**除了上述对各层级的简单说明外，各项目目录下也都有添加针对当前项目的详细说明，详情可查看各项目目录下的README文件；**
 
-## 
+## 结束
 当前所负责的产品的确存在现有的SOA项目结构向SpringCloud分布式升级的需求，所以smart-cloud-learn也便是作为本人对SpringCloud的探索而存在；
-当前项目结构由于是学习使用，相对而言结构并不复杂，为了保持单一性，避免再添加更多的文件，导致项目结构越来越嘈杂，所以当前的cloud-learn后续将
+当前项目结构由于是学习使用，相对而言结构并不复杂，为了保持单一性，避免再添加更多的文件，导致项目结构越来越繁杂，所以当前的smart-cloud-learn后续将不再进行大量提交；
+
+不过后续会将已有的项目升级完后的Cloud框架抽出来提交为一个新的项目 [点击我](https://github.com/DearZh/smart-boot)；
+但在此之前如果有需要了解真实场景下Cloud使用方式的同学可以先参考GitHub的这个项目：[一款基于电商商城的Cloud项目](https://github.com/paascloud/paascloud-master)
+除了启动方式没有使用Docker以外，整体项目结构还是蛮规范的，仅供参考 :octocat: :zap: 
