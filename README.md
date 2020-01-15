@@ -46,10 +46,10 @@ Cloud的框架的确很简单，很舒服；如果你现有的SOA服务需要做
 * [smart-zuul-proxy](https://github.com/DearZh/smart-cloud-learn/tree/master/smart-zuul-proxy)(port：8401)
 基于zuul的代理网关，实现了（反向代理，负载均衡及拦截器和熔断功能）
 
-*
+* [smart-nacos]()基于nacos实现配置中心和注册中心的功能
 
 除了上述对各层级的简单说明外，各项目目录下也都有添加针对当前项目的详细说明，详情可查看各项目目录下的README.md文件；
 
 ## 
-当前本人所负责的产品的确存在现有的SOA项目结构向SpringCloud分布式升级的需求，所以smart-cloud-learn也便是作为本人对SpringCloud的探索而存在；
+当前所负责的产品的确存在现有的SOA项目结构向SpringCloud分布式升级的需求，所以smart-cloud-learn也便是作为本人对SpringCloud的探索而存在；
 当前项目结构由于是学习使用，相对而言结构并不复杂，为了保持单一性，避免再添加更多的文件，导致项目结构越来越嘈杂，所以当前的cloud-learn后续将

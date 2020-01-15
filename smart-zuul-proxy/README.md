@@ -24,7 +24,33 @@ Zuul是Netflix出品的一个基于JVM路由和服务端的负载均衡器。
 
 ##
 此处smart-zuul-proxy共实现（反向代理，负载均衡，及拦截器和熔断功能）
-
+````
+常用配置
+zuul:
+  routes: #给服务配置路由
+    user-service:
+      path: /userService/**
+    feign-service:
+      path: /feignService/**
+  ignored-services: user-service,feign-service #关闭默认路由配置
+  prefix: /proxy #给网关路由添加前缀
+  sensitive-headers: Cookie,Set-Cookie,Authorization #配置过滤敏感的请求头信息，设置为空就不会过滤
+  add-host-header: true #设置为true重定向是会添加host请求头
+  retryable: true # 关闭重试机制
+  PreLogFilter:
+    pre:
+      disable: false #控制是否启用过滤器
+hystrix:
+  command: #用于控制HystrixCommand的行为
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000 #配置HystrixCommand执行的超时时间，执行超过该时间会进行服务降级处理
+ribbon: #全局配置
+  ConnectTimeout: 1000 #服务请求连接超时时间（毫秒）
+  ReadTimeout: 3000 #服务请求处理超时时间（毫秒）
+````
 
 可参考链接：
 https://juejin.im/post/5d9f2dea6fb9a04e3e724067

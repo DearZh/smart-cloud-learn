@@ -14,6 +14,9 @@
     <modules>
         <module>smart-platform-common</module>
         <module>smart-user-service</module>
+        <module>smart-feign-user</module>
+        <module>smart-hystrix-user</module>
+        <module>smart-ribbon</module>
     </modules>
 
 
