@@ -14,9 +14,9 @@ Nacos的服务端需要单独下载部署使用，所以项目中使用Nacos的�
 
 ## Nacos服务注册发现于配置管理功能
 
-1、[smart-nacos-client](smart-nacos-client)：实现了Nacos的配置管理于配置更新的功能；
+1、[smart-nacos-client](smart-nacos-client)(port：9101)：实现了Nacos的配置管理于配置更新的功能；
 
-2、smart-nacos-server，smart-nacos-ribbon：实现了Nacos的服务注册与发现功能
+2、[smart-nacos-user-server](smart-nacos-user-server)(port:9102,replica1:9103)[smart-nacos-user-ribbon](smart-nacos-user-ribbon)(port:9104)：实现了Nacos的服务注册与发现功能
 
 
 ## 可参考链接：

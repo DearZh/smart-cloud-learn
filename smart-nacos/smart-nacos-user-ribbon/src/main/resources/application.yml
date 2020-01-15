@@ -1,0 +1,11 @@
+server:
+  port: 9104
+spring:
+  application:
+    name: smart-nacos-user-ribbon
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+service-url:
+  smart-nacos-user-service: http://smart-nacos-user-server
